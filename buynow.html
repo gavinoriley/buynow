@@ -1,1 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Now - Hamachi the Psychotic Killer</title>
+    <style>
+        @font-face {
+            font-family: 'FSEX300';
+            src: url('https://gavinoriley.github.io/assets/FSEX300.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
 
+        body {
+            background-color: black;
+            min-height: 100vh;
+            color: white;
+            font-family: 'FSEX300', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            padding-top: 60px; /* Space for the fixed nav bar */
+            position: relative;
+            cursor: url('/assets/sprCursor_3.png'), auto;
+        }
+
+        .nav-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            z-index: 100;
+        }
+
+        .nav-bar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            text-shadow: 1px 1px 2px black;
+            cursor: url('/assets/sprCursor_3.png'), auto;
+        }
+
+        .nav-bar a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            max-width: 25%;
+            margin-left: 15%;
+            padding: 20px;
+            text-align: left;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: white;
+            text-shadow: 1px 1px 2px black;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.5;
+            color: white;
+            text-shadow: 1px 1px 2px black;
+            margin-bottom: 20px;
+        }
+
+        .benefits {
+            max-width: 25%;
+            margin-left: 17%;
+            text-align: left;
+        }
+
+        .benefits h2 {
+            font-size: 24px;
+            color: white;
+            text-shadow: 1px 1px 2px black;
+            margin-bottom: 10px;
+        }
+
+        .benefits ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            font-size: 20px;
+            line-height: 1.5;
+            color: white;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        .benefits li {
+            margin-bottom: 10px;
+        }
+
+        .button-container {
+            position: absolute;
+            top: 100px;
+            right: 20px;
+            z-index: 10;
+        }
+
+        .button-container a {
+            display: inline-block;
+        }
+
+        .button-container .buy-now-link {
+            margin-right: 200px;
+        }
+
+        .button-container img {
+            width: 200px;
+            height: auto;
+            background: transparent !important;
+            transition: transform 0.3s ease;
+        }
+
+        .button-container img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px #A100A1;
+        }
+
+        .itch-container {
+            position: absolute;
+            top: 200px; /* Places it below the Steam button */
+            right: 20px;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <a href="https://hamachithepsychotickiller.com">HOME</a>
+        <a href="https://store.steampowered.com/news/app/3355690/view/520837042930712593">READ DEVLOG</a>
+        <a href="https://hamachithepsychotickiller.com/about/">ABOUT</a>
+        <a href="https://store.steampowered.com/app/3355690/Hamachi_the_Psychotic_Killer/">BUY NOW</a>
+    </div>
+    <div class="content">
+        <h1>Purchase now!</h1>
+        <p>When Hamachi the Psychotic Killer is finished, you will get the full version when it is released.</p>
+        <p>Please note that when you buy the game, you're paying for the game as it is right now!</p>
+        <p>You can buy the game on Steam for Windows and Mac, or purchase the Windows version directly as a standalone download.</p>
+    </div>
+    <div class="button-container">
+        <a href="https://store.steampowered.com/app/3355690/Hamachi_the_Psychotic_Killer/" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="buy-now-link">
+            <img src="https://gavinoriley.github.io/assets/buyonsteam.png" alt="Buy on Steam Button">
+        </a>
+    </div>
+    <div class="itch-container">
+        <iframe frameborder="0" src="https://itch.io/embed/791155?border_width=0&bg_color=ff44cd" width="550" height="165"><a href="https://gavinoriley.itch.io/hamachithepsychotickiller">Hamachi the Psychotic Killer by gavinoriley</a></iframe>
+    </div>
+    <div class="benefits">
+        <h2>Here's what you get:</h2>
+        <ul>
+            <li>You get early access to the game!</li>
+            <li>You help fund the development of Hamachi the Psychotic Killer</li>
+            <li>Access to 3 worlds: Riches Reef, Desolate Demise, and Pink Paradise</li>
+        </ul>
+    </div>
+</body>
+</html>
