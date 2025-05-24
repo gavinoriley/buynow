@@ -16,41 +16,44 @@
             font-display: swap;
         }
 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'FSEX300', Arial, sans-serif;
+            cursor: url('/assets/sprCursor_3.png'), auto;
+        }
+
         body {
             background-color: black;
             min-height: 100vh;
             color: white;
-            font-family: 'FSEX300', Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            padding-top: 60px; /* Space for the fixed nav bar */
             position: relative;
-            cursor: url('/assets/sprCursor_3.png'), auto;
+            padding-top: 60px; /* Space for the fixed navbar */
         }
 
-        .nav-bar {
+        .navbar {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
-            background-color: #333;
-            padding: 10px 0;
+            background-color: #000000;
+            padding: 20px 0;
             display: flex;
             justify-content: center;
-            gap: 40px;
+            gap: 60px;
             z-index: 100;
         }
 
-        .nav-bar a {
-            color: white;
+        .navbar a {
+            color: #fff;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 30px;
             text-shadow: 1px 1px 2px black;
-            cursor: url('/assets/sprCursor_3.png'), auto;
         }
 
-        .nav-bar a:hover {
-            text-decoration: underline;
+        .navbar a:hover {
+            color: #ddd;
         }
 
         .content {
@@ -125,26 +128,24 @@
 
         .button-container img:hover {
             transform: scale(1.1);
-            box-shadow: 0 0 10px #0000FF; /* Changed from #A100A1 to blue */
+            box-shadow: 0 0 10px #0000FF;
         }
 
         .itch-container {
             position: absolute;
             top: 400px;
-            right: 200px; /* Adjusted to push further to the right */
+            right: 200px;
             z-index: 10;
         }
     </style>
 </head>
 <body>
-    <div class="nav-bar">
-        <a href="https://hamachithepsychotickiller.com">HOME</a>
+    <nav class="navbar">
         <a href="https://hamachithepsychotickiller.com/about/">ABOUT</a>
-        <a href="https://store.steampowered.com/news/app/3355690/view/520837042930712593" target="_blank">READ DEVLOG</a>
-        <a href="https://hamachithepsychotickiller.com/buynow/">BUY NOW</a>
-        <a href="https://hamachithepsychotickiller.com/badguy/">BAD GUY?</a>
+        <a href="https://hamachithepsychotickiller.com/buynow/">EARLY ACCESS</a>
+        <a href="https://store.steampowered.com/news/app/3355690/view/520837042930712593" target="_blank">DEVLOG</a>
         <a href="https://itch.io/embed-upload/13425866?color=333333" target="_blank">PLAY IN BROWSER</a>
-    </div>
+    </nav>
     <div class="content">
         <h1>Purchase now!</h1>
         <p>This game is in development. When Hamachi the Psychotic Killer is finished, you will receive the full version of the game when it is released.</p>
